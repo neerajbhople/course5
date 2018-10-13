@@ -7,8 +7,12 @@
 	<title>My first angular JS app for testing</title>
 </head>
 <body>
-    <div ng-controller="MyFirstController">
-
+	<h1>My first AngJS app</h1>
+    <div ng-controller="myFirstController">
+    	
+    	<div>Your name is: <input type="text" ng-model="name" ng-keyup="calculateNameValue();"></div>
+    	<div>Value of your name is : {{nameValue}}</div>
+    	
     </div>
 </body>
 </html>
