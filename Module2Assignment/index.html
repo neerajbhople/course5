@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app='ShoppingListCheckOff'>
   <head>
-    <title>Shopping List Check Off</title>
+    <title>Shopping List check off assignment - module 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
@@ -22,12 +22,15 @@
       button > span {
         color: green;
       }
+      h1{
+        text-align: center;
+      }
     </style>
   </head>
 
 <body>
   <div class="container">
-    <h1>Shopping List Check Off</h1>
+    <h1>Shopping List Check Off Assignment Module 2</h1>
 
     <div class="row">
       <!-- To Buy List -->
@@ -37,8 +40,7 @@
           <li ng-repeat="item in toBuy.items">
             Buy {{ item.quantity }} {{ item.name }}
             <button ng-click="toBuy.buy($index)" class="btn btn-default">
-              <span ng-if="item.name!=='Final Fantasy XV'" class="glyphicon glyphicon-ok"></span>
-              <img src="images/logo-final-fantasy.png" style="width:120px" ng-if="item.name==='Final Fantasy XV'"> Bought
+              Bought
             </button>
           </li>
         </ul>

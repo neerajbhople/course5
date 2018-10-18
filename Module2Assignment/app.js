@@ -26,10 +26,10 @@ function ShoppingListCheckOffService() {
   var service = this;
   var toBuyItems = [
     { name: "cookies", quantity: 10 },
-    { name: "milk", quantity: 7 },
-    { name: "chips", quantity: 5 },
-    { name: "soda", quantity: 6 },
-    { name: "Final Fantasy XV", quantity: 1 }];
+    { name: "bananas", quantity: 12 },
+    { name: "chips", quantity: 10 },
+    { name: "soda", quantity: 2 },
+    { name: "Oranges", quantity: 6 }];
 
   var boughtItems = [];
 
